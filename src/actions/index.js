@@ -9,8 +9,6 @@ export function fetchWeather(city) {
   const url = `${ROOT_URL}&q=${city},kr`;
   const request = axios.get(url);
 
-  console.log('in actions:', request);
-
   return {
     // redux-promise가 request의 Resolove or Error를 대신 처리해준다.
     // redux-promise가 middleware이다.
